@@ -1,0 +1,13 @@
+server:
+  port: 9090
+
+security:
+  oauth2:
+    client:
+      client-id: web
+      client-secret: pin
+      access-token-uri: http://localhost:8181/oauth/token?grant_type=password&username=user&password=pass123
+    resource:
+      token-info-uri: http://localhost:8181/oauth/check_token
+
+
